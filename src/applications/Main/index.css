@@ -1,0 +1,6 @@
+.Main{
+	transition: opacity .5s;
+	margin: 0 auto;
+	width: 400px;
+	padding: 10px;
+}

@@ -1,0 +1,929 @@
+{
+	"table"	: "mega-menu",
+	"result" : [
+		{
+			"label" : "Home",
+			"href": "src/applications/Main/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+		},
+		{
+			"label" : "Resources",
+			"state" : "enabled",
+			"items":[
+				{
+					"label" : "Company Information",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label":"Company Policies"
+						},
+						{
+							"label":"Forms Library"
+						},
+						{
+							"label":"FAQs"
+						},
+						{
+							"label":"Tools/References"
+						},
+						{
+							"label":"Manager Tools"
+						},
+						{
+							"label":"Practitioner Tools"
+						}
+					]
+				},
+				{
+					"label" : "Learning",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label":"Learn@ADP"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "MySelf",
+			"items":[
+				{
+					"label" : "Personal Information",
+					"appref": "apps/Colaborador",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label": "Personal Profile",
+							"href" : "src/applications/PersonalProfile/index.html"
+						},
+						{
+							"label": "Dependents &amp; Beneficiaries",
+							"state" : "disabled"
+						},
+						{
+							"label": "Talent Profile",
+							"href" : "src/applications/TalentProfile/index.html"
+						}
+					]
+				},
+				{
+					"label" : "Employment",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label": "Employment Profile",
+							"href" : "src/applications/EmploymentProfile/index.html"
+						},
+						{
+							"label": "Time Position Info",
+							"state" : "disabled"
+						},
+						{
+							"label": "My Documents",
+							"href" : "src/applications/MyDocuments/index.html"
+						},
+						{
+							"label": "Company Property",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Pay",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label": "Tax Forms",
+							"state" : "disabled"
+						},
+						{
+							"label": "Direct Deposit",
+							"state" : "disabled"
+						},
+						{
+							"label": "Tax Withholdings",
+							"state" : "disabled"
+						},
+						{
+							"label": "Pay Statements",
+							"href" : "src/applications/PayStatements/index.html"
+						}
+					]
+				},
+				{
+					"label" : "Time &amp; Attendance",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label": "My Time Entry",
+							"state" : "disabled"
+						},
+						{
+							"label": "Annual Summary",
+							"href" : "src/applications/AnnualSummary/index.html"
+						},
+						{
+							"label": "My Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label": "Holiday List",
+							"state" : "disabled"
+						},
+						{
+							"label": "Schedule at a glance",
+							"state" : "disabled"
+						},
+						{
+							"label": "Attendance",
+							"state" : "disabled"
+						},
+						{
+							"label": "Actual vs. Scheduled",
+							"state" : "disabled"
+						},
+						{
+							"label": "Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label": "Monthly Schedule",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Time Off",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Request Time Off",
+							"href" : "src/applications/RequestTimeOff/index.html"
+						},
+						{
+							"label" : "Time Off Balances",
+							"state" : "disabled"
+						},
+						{
+							"label" : "List Of Requests",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Request Carryover",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Talent",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Performance Dashboard",
+							"href" : "src/applications/PerformanceDashboard/index.html"
+						},
+						{
+							"label" : "Performance Goals",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Compensation Notices",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Career Center",
+							"href" : "src/applications/CareerCenter/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				},
+				{
+					"label" : "Benefits",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Enrollments",
+							"href" : "src/applications/Enrollments/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Documents",
+							"state" : "disabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "My Team",
+			"state" : "enabled",
+			"items" : [
+				{
+					"label" : "My Team",
+					"state" : "disabled",
+					"items" :[
+						{
+							"label" : "Delegated Activities",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Organizational Chart",
+							"href" : "src/applications/OrganizationalChart/index_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Policy Status",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Team Calendar",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Employment",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label": "Employment Profile",
+							"href" : "src/applications/EmploymentProfile/index.html"
+						},
+						{
+							"label": "Time Position Info",
+							"state" : "disabled"
+						},
+						{
+							"label": "My Documents",
+							"href" : "src/applications/MyDocuments/index.html"
+						},
+						{
+							"label": "Company Property",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Time Off",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Request Time Off",
+							"href" : "src/applications/RequestTimeOff/index.html"
+						},
+						{
+							"label" : "Time Off Balances",
+							"state" : "disabled"
+						},
+						{
+							"label" : "List Of Requests",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Request Carryover",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Personal Information",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Personal Profile",
+							"href" : "src/applications/PersonalProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Employee Profile",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Employee Notes",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Talent Profile",
+							"href" : "src/applications/TalentProfile/index.html"
+						}
+					]
+				},
+				{
+					"label" : "Talent",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Performance Dashboard",
+							"href" : "src/applications/PerformanceDashboard/index.html"
+						},
+						{
+							"label" : "Performance Goals",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Requisitions",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Applications",
+							"state" : "disabled",
+							"href" : "src/applications/TalentApplications/index.html"
+						},
+						{
+							"label" : "Compensation Dashboard",
+							"href" : "src/applications/CompensationDashboard/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Compensation Notices",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Time &amp; Attendance",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Individual Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Holiday List",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Timecard Exceptions",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Attendance",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Totals Summary",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Quick Charge",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Quick Charge",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Group Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Timecards",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Schedules",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Timecard Exceptions",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Actual vs. Scheduled",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Schedules",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Monthly Schedules",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Group Labor",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Annual Summary",
+							"href" : "src/applications/AnnualSummary/index.html"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "People",
+            "items":[
+				{
+					"label" : "Personal Information",
+					"appref": "apps/Colaborador",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Personal Profile",
+							"href" : "src/applications/PersonalProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Personal Registration Code (PRC)",
+							"state" : "disabled"
+						},
+						{
+							"label": "Employee Profile Report",
+							"state" : "disabled"
+						},
+						{
+							"label": "Employee Notes",
+							"state" : "disabled"
+						},
+						{
+							"label": "Statutory Compliance",
+							"state" : "disabled"
+						},
+						{
+							"label": "Talent Profile",
+							"href" : "src/applications/TalentProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				},
+				{
+					"label" : "Employment",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Employment Profile",
+							"href" : "src/applications/EmploymentProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Time Position Info",
+							"state" : "disabled"
+						},
+						{
+							"label": "Employee Documents",
+							"href" : "src/applications/MyDocuments/index.html"
+						},
+						{
+							"label": "Company Property",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Pay",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Pay Profile",
+							"href" : "src/applications/PayProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Manual Checks",
+							"state" : "disabled"
+						},
+						{
+							"label": "QuickCalc",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Time &amp; Attendance",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Individual Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label": "Annual Summary",
+							"href" : "src/applications/AnnualSummary/index.html"
+						},
+						{
+							"label": "Timecard Exceptions",
+							"state" : "disabled"
+						},
+						{
+							"label": "Totals Summary",
+							"state" : "disabled"
+						},
+						{
+							"label": "Group Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label": "Schedules",
+							"state" : "disabled"
+						},
+						{
+							"label": "Actual vs. Scheduled",
+							"state" : "disabled"
+						},
+						{
+							"label": "Monthly Schedule",
+							"state" : "disabled"
+						},
+						{
+							"label": "Holiday List",
+							"state" : "disabled"
+						},
+						{
+							"label": "Reprocess Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label": "Attendance",
+							"state" : "disabled"
+						},
+						{
+							"label": "Quick Charge",
+							"state" : "disabled"
+						},
+						{
+							"label": "Accumulator Balances",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Time Off",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Policy Assignments",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Time Off Balances",
+							"state" : "disabled"
+						},
+						{
+							"label" : "List Of Requests",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Request Time Off",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Request Carryover",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Stop/Restart Awards",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Talent",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Performance Goals",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Compensation Notices",
+							"state" : "disabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Process",
+			"items" : [
+				{
+					"label" : "Time & Attendance",
+					"items" : [
+						{
+							"label" : "Payroll Adjustment",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Time Off",
+					"items" : [
+						{
+							"label" : "Policy Mass Assign",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Assign Blackout Days",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Process Accruals",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Process Pending Requests",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "HR",
+					"items" : [
+						{
+							"label" : "Hire/Rehire",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Add Another Position",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Terminate",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Place On Leave",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Mass Change",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Cancel Transfer",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Delete Employees",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Archive Employee",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Delegated Activities",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Transfer Employee",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Payroll",
+					"items" : [
+						{
+							"label" : "Payroll Cycle",
+							"href" : "src/applications/PayrollCycle/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Start New Cycle",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Payroll Schedule",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Paydata",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Manual Checks",
+							"state" : "disabled"
+						},
+						{
+							"label" : "QuickCalc",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Third Party Sick Pay",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Gross Receipts",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Verify Input",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Calculate Preview Payroll",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Preview Results",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Talent",
+					"items" : [
+						{
+							"label" : "Performance Dashboard",
+							"href" : "src/applications/PerformanceDashboard/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Performance Goals",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Requisitions",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Applications",
+							"href" : "src/applications/TalentApplications/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Compensation Dashboard",
+							"href" : "src/applications/CompensationDashboard/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Referrals",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Utilities",
+					"items" : [
+						{
+							"label" : "Import",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Export",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Other Tasks",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Load Files From ADP",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Reset Cycle Status",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Batch Process Info",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Tools",
+					"items" : [
+						{
+							"label" : "Notes & Alerts",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Package Tracking",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Workflow Administration",
+					"items" : [
+						{
+							"label" : "Manage Message Center",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Delegate Approvals",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Manage Employee Activities",
+							"state" : "disabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Reports",
+			"items" : [
+				{
+					"label" : "View",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Reports Out",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Reports Scheduled",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Standard Reports",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "All Reports",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "My Reports",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "All Reports",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "My Team Reports",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "All Reports",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Custom Reports",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "All Reports",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Comparison Reports",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Set Up New",
+							"href" : "src/applications/Reports/CustomReports/SetUpNew/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "All Reports",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Sample Reports",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Fields Library",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Additional Reporting",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "All Reports",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Cycle Out Reports",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "All Reports",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Analytics",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Dashboards",
+							"state" : "enabled",
+							"href"  : "src/applications/Analytics/Dashboard/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				}
+			]
+		}
+	]
+}

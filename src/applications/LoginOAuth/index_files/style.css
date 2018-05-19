@@ -1,0 +1,18 @@
+/* Effective stylesheet produced by snapshot save */
+body { background: rgb(248, 248, 248) none repeat scroll 0% 0%; font-family: "PT Sans",Helvetica,Arial,sans-serif; text-align: center; color: rgb(255, 255, 255); }
+.page-container { margin: 120px auto 0px; }
+h1 { font-size: 30px; font-weight: 700; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); }
+form { position: relative; width: 305px; margin: 15px auto 0px; text-align: center; }
+input { width: 270px; height: 42px; margin-top: 25px; padding: 0px 15px; background: rgba(45, 45, 45, 0.15) none repeat scroll 0% 0%; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1) inset; font-family: "PT Sans",Helvetica,Arial,sans-serif; font-size: 14px; color: rgb(255, 255, 255); text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); transition: all 0.2s ease 0s; }
+input:-moz-placeholder { color: rgb(255, 255, 255); }
+input:focus { outline: medium none; box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1) inset, 0px 2px 7px 0px rgba(0, 0, 0, 0.2); }
+button { cursor: pointer; width: 300px; height: 44px; margin-top: 25px; padding: 0px; background: rgb(239, 67, 0) none repeat scroll 0% 0%; border-radius: 6px; border: 1px solid rgb(255, 115, 14); box-shadow: 0px 15px 30px 0px rgba(255, 255, 255, 0.25) inset, 0px 2px 7px 0px rgba(0, 0, 0, 0.2); font-family: "PT Sans",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: 700; color: rgb(255, 255, 255); text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); transition: all 0.2s ease 0s; }
+button:hover { box-shadow: 0px 15px 30px 0px rgba(255, 255, 255, 0.15) inset, 0px 2px 7px 0px rgba(0, 0, 0, 0.2); }
+button:active { box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 1px 4px 0px rgba(0, 0, 0, 0.1); border: 0px solid rgb(239, 67, 0); }
+.error { display: none; position: absolute; top: 27px; right: -55px; width: 40px; height: 40px; background: rgba(45, 45, 45, 0.25) none repeat scroll 0% 0%; border-radius: 8px; }
+.error span { display: inline-block; margin-left: 2px; font-size: 40px; font-weight: 700; line-height: 40px; text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); transform: rotate(45deg); }
+.connect { width: 305px; margin: 35px auto 0px; font-size: 18px; font-weight: 700; text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+.connect a { display: inline-block; width: 32px; height: 35px; margin-top: 15px; transition: all 0.2s ease 0s; }
+.connect a.facebook { background: transparent url("facebook.png") no-repeat scroll center center; }
+.connect a.twitter { background: transparent url("twitter.png") no-repeat scroll center center; }
+.connect a:hover { background-position: center bottom; }

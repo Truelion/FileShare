@@ -1,0 +1,41 @@
+html,body {
+	font-family: ProximaNova;
+	font-size: 12px;
+}
+
+body{
+	opacity: 1;
+width: 50%;
+margin: 55px auto;
+}
+
+h1,h2,h3,h4,h5 {
+	margin:0;
+}
+
+
+.FrameworkReleaseNotes .release {
+	margin-bottom: 20px;
+	border-bottom: 1px solid gray;
+	padding-bottom: 20px;
+}
+
+.FrameworkReleaseNotes code{
+	background: yellow;
+	color: black;
+	padding: 0px 7px;
+}
+
+.FrameworkReleaseNotes .installnotes-title{
+	color:red;
+	font-weight: bold;
+}
+
+.FrameworkReleaseNotes .version-title {
+	color:blue;
+}
+
+
+.FrameworkReleaseNotes .release li {
+    margin-bottom: 35px;
+}

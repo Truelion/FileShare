@@ -1,0 +1,61 @@
+{
+	"table" : "pay_equity",
+	"items" : [
+		{
+			"id" : 100,
+			"category" : "gender_gap",
+			"title" : "Female Pay vs. Male Pay",
+			"ratio" : "35 of 64 (55%)",
+			"gaps" : [
+				{
+					"title" : "Female Pay vs. Male Pay",
+					"cents" : "84¢ / $1",
+					"plotdata" : {
+						"name" : "4¢ vs Last Quarter",
+						"categories": ["...", "Q4", "Q1", "Q2", "Q3"],
+						"data" : [[77],[79],[78],[80],[84]],
+						"pointFormat" : "Value: {point.y:.2f} \u00A2"
+					}
+				},
+				{
+					"title" : "Female New Hire Pay vs. Male Pay",
+					"cents" : "66¢ / $1",
+					"plotdata" : {
+						"name" : "-17 ¢ vs Last Quarter",
+						"categories": ["...", "Q4", "Q1", "Q2", "Q3"],
+						"data" : [[60],[80],[67],[83],[66]],
+						"pointFormat" : "Value: {point.y:.2f} \u00A2"
+					}
+				}
+			]
+		},
+		{
+			"id" : 120,
+			"category" : "ethnic_gap",
+			"title" : "Female Pay vs. Male Pay",
+			"ratio" : "77 of 135 (57%)",
+			"gaps" : [
+				{
+					"title" : "Pay for All Races/Ethnicities vs. Highest Paid Race/Ethnicity",
+					"cents" : "71¢ / $1",
+					"plotdata" : {
+						"name" : "2¢ vs Last Quarter ",
+						"categories": ["...", "Q4", "Q1", "Q2", "Q3"],
+						"data" : [[30],[79],[52],[80],[81]],
+						"pointFormat" : "Value: {point.y:.2f} \u00A2"
+					}
+				},
+				{
+					"title" : "Pay for All New Hires Within All Other Races/Ethnicities vs. Highest Paid Race/Ethnicity",
+					"cents" : "73¢ / $1",
+					"plotdata" : {
+						"name" : "7 ¢ vs Last Quarter",
+						"categories": ["...", "Q4", "Q1", "Q2", "Q3"],
+						"data" : [[12],[80],[17],[23],[66]],
+						"pointFormat" : "Value: {point.y:.2f} \u00A2"
+					}
+				}
+			]
+		}
+	]
+}

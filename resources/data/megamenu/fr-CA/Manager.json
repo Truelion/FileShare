@@ -1,0 +1,448 @@
+{
+	"table"	: "mega-menu",
+	"result" : [
+		{
+			"label" : "Accueil",
+			"href": "../Main/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+		},
+		{
+			"label" : "Ressources",
+			"state" : "enabled",
+			"items":[
+				{
+					"label" : "Infos sur l'entreprise",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label":"Politiques de l'entreprise"
+						},
+						{
+							"label":"Biblioth&egrave;que de formulaires"
+						},
+						{
+							"label":"Foire aux questions"
+						},
+						{
+							"label":"Outils/r&eacute;f&eacute;rences"
+						},
+						{
+						    "label":"Outils pour gestionnaires"
+						},
+						{
+							"label":"Mes outils"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Moi-m&ecirc;me",
+			"items":[
+				{
+					"label" : "Renseignements personnels",
+					"appref": "apps/Colaborador",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Profil personnel",
+							"href" : "../PersonalProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Personnes &agrave; charge et b&eacute;n&eacute;ficiaires",
+							"state" : "disabled"
+						},
+						{
+							"label": "Profil de talent",
+							"href" : "../TalentProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				},
+				{
+					"label" : "Emploi",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Profil d'emploi",
+							"href" : "../EmploymentProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Infos sur temps en poste",
+							"state" : "disabled"
+						},
+						{
+							"label": "Mes Documents",
+							"href" : "../MyDocuments/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Biens de l'entreprise",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Paie",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Formulaires d'imp&ocirc;t",
+							"state" : "disabled"
+						},
+						{
+							"label": "D&eacute;p&ocirc;t direct",
+							"state" : "disabled"
+						},
+						{
+							"label": "Retenues d'imp&ocirc;t",
+							"state" : "disabled"
+						},
+						{
+							"label": "Bulletins de paie",
+							"href": "../PayStatements/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				},
+				{
+					"label" : "Heures et pr&eacute;sences",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Mon entr&eacute;e de temps",
+							"state" : "disabled"
+						},
+						{
+							"label": "Sommaire annuel",
+							"href" : "../AnnualSummary/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Ma fiche de pr&eacute;sence",
+							"state" : "disabled"
+						},
+						{
+							"label": "Liste des jours f&eacute;ri&eacute;s",
+							"state" : "disabled"
+						},
+						{
+							"label": "Aper&ccedil;u du calendrier",
+							"state" : "disabled"
+						},
+						{
+							"label": "Pr&eacute;sences",
+							"state" : "disabled"
+						},
+						{
+							"label": "R&eacute;elles/programm&eacute;es",
+							"state" : "disabled"
+						},
+						{
+							"label": "Fiche de pr&eacute;sence",
+							"state" : "disabled"
+						},
+						{
+							"label": "Calendrier mensuel",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Cong&eacute;s",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Demander un cong&eacute;",
+							"href" : "../RequestTimeOff/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Soldes de cong&eacute;s",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Liste de demandes",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Report d'une demande",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Talent",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Tableau de bord de performance",
+							"href" : "../PerformanceDashboard/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Objectifs de performance",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Avis de r&eacute;mun&eacute;ration",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Centre de carri&egrave;res",
+							"href" : "../CareerCenter/index_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				},
+				{
+					"label" : "Avantages sociaux",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Adh&eacute;sions",
+							"href" : "../Enrollments/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Documents",
+							"state" : "disabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Mon &Eacute;quipe",
+			"state" : "enabled",
+			"items" : [
+				{
+					"label" : "Mon &Eacute;quipe",
+					"items" :[
+						{
+							"label" : "Activit&eacute;s d&eacute;l&eacute;gu&eacute;es",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Organigramme",
+							"href": "../OrganizationalChart/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Situation de la politique",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Calendrier d'&eacute;quipe",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Emploi",
+					"items" : [
+						{
+							"label": "Profil d'emploi",
+							"href": "../EmploymentProfile/index_MyTeam_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Infos sur temps en poste",
+							"state" : "disabled"
+						},
+						{
+							"label": "Documents d'employ&eacute;s",
+							"href": "../MyDocuments/index_MyTeam_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Actifs de l'entreprise",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Cong&eacute;s",
+					"items" : [
+						{
+							"label" : "Demander un cong&eacute;",
+							"href": "../RequestTimeOff/index_MyTeam_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Soldes de cong&eacute;s",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Liste de demandes",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Report d'une demande",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Renseignements personnels",
+					"items" : [
+						{
+							"label" : "Profil personnel",
+							"href": "../PersonalProfile/index_MyTeam_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Profil d'employ&eacute;",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Notes sur l'employ&eacute;",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Profil de talent",
+							"href": "../TalentProfile/index_MyTeam_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				},
+				{
+					"label" : "Talent",
+					"items" : [
+						{
+							"label" : "Tableau de bord de performance",
+							"href": "../PerformanceDashboard/index_MyTeam_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Objectifs de performance",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Requ&ecirc;tes",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Demandes d'emploi",
+							"href": "../TalentApplications/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Tableau de bord de la r&eacute;mun&eacute;ration",
+							"href": "../CompensationDashboard/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Avis de r&eacute;mun&eacute;ration",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Heures et pr&eacute;sences",
+					"items" : [
+						{
+							"label" : "Fiche de pr&eacute;sence individuelle",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Liste des jours f&eacute;ri&eacute;s",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Exceptions sur les fiches de pr&eacute;sence",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Pr&eacute;sences",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Sommaire des totaux",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Charge rapide",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Fiche de pr&eacute;sence de groupe",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Fiches de pr&eacute;sence",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Horaire",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Exceptions sur les fiches de pr&eacute;sence",
+							"state" : "disabled"
+						},
+						{
+							"label" : "R&eacute;elles/programm&eacute;es",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Horaires",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Calendrier mensuel",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Groupe &ndash; Main-d'&aelig;uvre",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Sommaire annuel",
+							"href": "../AnnualSummary/index_MyTeam_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Rapports",
+			"items" : [
+				{
+					"label" : "Afficher",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Production de rapports"
+						}
+					]
+				},
+				{
+					"label" : "Mes rapports d'&eacute;quipe",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Tous les rapports"
+						},
+						{
+							"label" : "Personnel et emploi"
+						},
+						{
+							"label" : "Profil de talent"
+						},
+						{
+							"label" : "Recrutement"
+						},
+						{
+							"label" : "Horaires et pr&eacute;sences"
+						},
+						{
+							"label" : "Cong&eacute;s"
+						}
+					]
+				},
+				{
+					"label" : "Mes rapports",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label" : "Tous les rapports"
+						},
+						{
+							"label" : "Mes rapports d'&eacute;quipe"
+						}
+					]
+				}
+			]
+		}
+	]
+}

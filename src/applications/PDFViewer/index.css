@@ -1,0 +1,35 @@
+html {
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+}
+.PDFViewer {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width:100%;
+	height:100%;
+	position: relative;
+}
+.PDFViewer .pdf{
+	width:100%;
+	height:100%;
+}
+.PDFViewer .scrollable {
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+	position: absolute;
+	bottom: 0;
+	top: 41px;
+}
+
+.PDFViewer #demo-toolbar {
+	height: 40px;
+	background: #464646;
+	border-bottom: 1px solid gray;
+}
+
+.PDFViewer #demo-toolbar .fa {
+	cursor: pointer;
+}

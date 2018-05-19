@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+        <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+        <meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1 maximum-scale=1.0 user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    	<title>ADP.COM: HelloWorld</title>
+
+
+
+
+
+
+
+        <!--====================== INSERT: OFFLINE DEMO LIBS ===================-->
+            <link rel="stylesheet" type="text/css" href="../../../resources/css/animate.css"/>
+            <link rel="stylesheet" type="text/css" href="../../../resources/css/font-awesome.min.css"/>
+            <link rel="stylesheet" type="text/css" href="../../../resources/css/fonts.css"/>
+      
+            <script src="../../../resources/constants.js"></script>
+            <script> Session = top.Session; </script>
+            <script src="../../../-appconfig.js"></script>
+            <script id="config">
+                Config.ROOTPATH = "../../../";
+                Config.NAMESPACE = "applications.HelloWorldSimple";
+                Config.USE_COMPRESSED_BUILD = false;     
+            </script>
+            <script src="../../../resources/routes.js"></script>
+            <script src="../../../src/libs/framework.src.js"></script>
+            <script src="../../../resources/labels.js"></script>
+        <!--====================== END INSERT: OFFLINE DEMO LIBS ===================-->
+
+    </head>
+
+
+
+
+
+
+
+    
+    <body>
+        <div id="megamenu" namespace="core.ui.menus.wfn.MegaMenu"></div>
+        <div style="border: 1px solid rgba(0,0,0,.1);padding: 10px;">
+            <h1>Hello World:</h1>
+            You're logged in as: <b><span id="fullname"></span></b> | <a href="#logout">Logout</a>
+            <br/>
+            <img id="emp-photo" src=""/>
+            <br/>
+            <img id="flagicon" style="vertical-align: middle;"/> Language: <span id="lang"></span> 
+            This is the main app that loads after login. <br/>Can be configured
+        in <b>-appconfig.js</b> at <code>{Config.Applications.MAIN}</code>
+
+        <br/><br/>
+        <div>Sample link that routes to the PDFViewer (src/applications/PDFViewer):</div>
+        <a href="#demopdf?path=../../../resources/pdf/EmployeePayStatementsDeposits201705261154.pdf">Go to PDFViewer application</a>
+        <br/>
+        <b>Routes</b> are defined in resources/routes.js -- redirects and click-tracking are handled
+        automatically if your view controller inherits from <code>core.ui.OfflineApplication</code>
+        <br/><br/>
+
+        <div namespace="core.ui.FlyoutButton"></div>
+        </div>
+
+        <div style="margin-top:30px;">
+            <button id="resetMenu">Reset and Re-render MegaMenu</button>
+        </div>
+
+        <div>
+            <h3>Data Binding</h3>
+            <div id="output"></div>
+            <input type="text" value="" data-bind="true" data-value="getText()"/>
+            <button id="changeNameBtn">change name</button>
+            <button id="toggleBinding">Toggle All Bindings Off/On</button>
+            <button id="toggleKeyupBinding">Toggle KeyUp Binding</button>
+            <button id="toggletextChangeBinding">Toggle Text Change Binding</button>
+
+        </div>
+
+    </body>
+
+</html>

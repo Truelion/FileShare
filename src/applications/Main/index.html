@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+    <meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1 maximum-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="google-signin-client_id" content="486645651279-kleqgkkch1ahecckj1o0vunp4d6ngktc.apps.googleusercontent.com">
+
+    <title>FileShare</title>
+    
+    <!--====================== FRAMEWORK INSTALL ===================-->
+        <link rel="stylesheet" type="text/css" href="../../../resources/css/animate.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../resources/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../resources/css/fonts.css"/>
+  
+        <script src="../../../resources/constants.js"></script>
+        <script> Session = top.Session; </script>
+        <script src="../../../-appconfig.js"></script>
+        <script id="config">
+            Config.NAMESPACE = "applications.Main"; 
+            Config.USE_COMPRESSED_BUILD  = false; 
+        </script>
+        <script src="../../../resources/routes.js"></script>
+        <script src="../../../src/libs/framework.src.js"></script>
+        <script src="../../../resources/labels.js"></script>
+
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--==================== END FRAMEWORK INSTALL ==================-->
+</head>
+<body style="opacity: 0;">
+    <h3 style="box-sizing: border-box;clear: all;margin-top: 0;text-align: center;font-family: SanFranciscoRegular;font-size: 24px;margin-bottom: 9px;">FILE SHARE</h3>
+    <div class="fa fa-cloud-upload-alt" style="display: block;text-align: center;font-size: 41px;"></div>
+    <div id="dropzone" style="height: 130px;width: 100%;border: 4px dashed rgba(0,0,0,.1);border-radius: 12px;margin-top: 20px;box-sizing: border-box;position: relative;">
+        <div style="text-align: center;position: absolute;transform: translate3d(-50%,-50%,0);left: 50%;top: 50%;font-family: SanFranciscoRegular;color: silver;font-size: 13px;">
+            <div>DRAG FILE HERE</div>
+            <div style="text-align: center;width: auto;font-family: SanFranciscoRegular;font-size: 11px;background: #33ace0;padding: 9px;border-radius: 7%;color: white;cursor: pointer;border: 3px solid gainsboro;margin-top: 7px;">OR SELECT</div>
+        </div>
+    </div>
+    <div style="font-family: SanFranciscoLight;font-size: 11px;color: #33ace0;text-decoration: underline;margin-top: 10px;text-align: center;">
+    <a id="magnet_link" target="_blank" href="https://www.addtoany.com/share?linkurl=[]&amp;linkname=[]" target="_blank">Share</a> | 
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+</body>
+
+</HTML>

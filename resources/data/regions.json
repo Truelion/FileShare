@@ -1,0 +1,21 @@
+{
+	"table" : "regions",
+	"items" : [
+		{
+			"id" : 100,
+			"name" : "United States",
+			"language" : "en",
+			"country" : "us",
+			"code" : "en-US",
+			"href" : "http://www.adp.com"
+		},
+		{
+			"id" : 120,
+			"name" : "Canada (French)",
+			"language" : "fr",
+			"country" : "ca",
+			"code" : "fr-CA",
+			"href" : "http://www.adp.ca/fr-ca/default.aspx"
+		}
+	]
+}

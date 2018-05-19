@@ -1,0 +1,40 @@
+{
+	"table"	: "mega-menu",
+	"result" : [
+		{
+			"label" : "Amministrazione del Personale",
+			"state" : "enabled",
+			"items" : [
+				{
+					"label" : "Area Amministrativa",
+					"appref": "",
+					"state" : "enabled",
+					"items":[
+						{
+							"label" : "OneService",
+							"href": "OneService/index.html?screen=agenda",
+							"state" : "enabled"
+						},
+						{
+							"label" : "Sipert",
+							"appref": "apps/Colaborador",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Documentale",
+					"appref": "",
+					"state" : "enabled",
+					"items":[
+						{
+							"label" : "Gestione Documenti",
+							"href": "GestioneDocumenti/index.html",
+							"state" : "enabled"
+						}
+					]
+				}
+			]
+		}
+	]
+}

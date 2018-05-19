@@ -1,0 +1,13 @@
+/* Effective stylesheet produced by snapshot save */
+* { margin: 0px; padding: 0px; }
+body { background: rgb(17, 17, 17) none repeat scroll 0% 0%; height: 100%; }
+img { border: medium none; }
+#supersized { display: block; position: fixed; left: 0px; top: 0px; overflow: hidden; z-index: -999; height: 100%; width: 100%; }
+#supersized img { width: auto; height: auto; position: relative; display: none; outline: medium none; border: medium none; }
+#supersized.quality img { image-rendering: optimizequality; }
+#supersized li { display: block; list-style: outside none none; z-index: -30; position: fixed; overflow: hidden; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(17, 17, 17) none repeat scroll 0% 0%; }
+#supersized a { width: 100%; height: 100%; display: block; }
+#supersized li.prevslide { z-index: -20; }
+#supersized li.activeslide { z-index: -10; }
+#supersized li.prevslide img, #supersized li.activeslide img { display: inline; }
+#supersized img { max-width: none ! important; }

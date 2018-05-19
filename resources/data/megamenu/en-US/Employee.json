@@ -1,0 +1,217 @@
+{
+	"table"	: "mega-menu",
+	"result" : [
+		{
+			"label" : "Home",
+			"href": "src/applications/Main/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+		},
+		{
+			"id":120,
+			"label" : "Resources",
+			"state" : "enabled",
+			"items":[
+				{
+					"label" : "PDFView Test",
+					"href": "src/applications/PDFViewer/index.html?type=pdf&path=../../../resources/pdf/EmployeePayStatementsDeposits201705261154.pdf",
+					"state" : "enabled"
+				},
+				{
+					"label" : "Company Information",
+					"appref": "",
+					"state" : "disabled",
+					"items" : [
+						{
+							"label":"Company Policies"
+						},
+						{
+							"label":"Forms Library"
+						},
+						{
+							"label":"FAQs"
+						},
+						{
+							"label":"Tools/References"
+						},
+						{
+							"label":"Manager Tools"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "MySelf",
+			"items":[
+				{
+					"label" : "Personal Information",
+					"appref": "apps/Colaborador",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Personal Profile",
+							"href" : "src/applications/PersonalProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Dependents &amp; Beneficiaries",
+							"state" : "disabled"
+						},
+						{
+							"label": "Talent Profile",
+							"href" : "src/applications/TalentProfile/index.html"
+						}
+					]
+				},
+				{
+					"label" : "Employment",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Employment Profile",
+							"href" : "src/applications/EmploymentProfile/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "Time Position Info",
+							"state" : "disabled"
+						},
+						{
+							"label": "My Documents",
+							"href" : "src/applications/MyDocuments/index.html"
+						},
+						{
+							"label": "Company Property",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Pay",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "Tax Forms",
+							"state" : "disabled"
+						},
+						{
+							"label": "Direct Deposit",
+							"state" : "disabled"
+						},
+						{
+							"label": "Tax Withholdings",
+							"state" : "disabled"
+						},
+						{
+							"label": "Pay Statements",
+							"href" : "src/applications/PayStatements/index.html"
+						}
+					]
+				},
+				{
+					"label" : "Time &amp; Attendance",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label": "My Time Entry",
+							"state" : "disabled"
+						},
+						{
+							"label": "Annual Summary",
+							"href" : "src/applications/AnnualSummary/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label": "My Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label": "Holiday List",
+							"state" : "disabled"
+						},
+						{
+							"label": "Schedule at a glance",
+							"state" : "disabled"
+						},
+						{
+							"label": "Attendance",
+							"state" : "disabled"
+						},
+						{
+							"label": "Actual vs. Scheduled",
+							"state" : "disabled"
+						},
+						{
+							"label": "Timecard",
+							"state" : "disabled"
+						},
+						{
+							"label": "Monthly Schedule",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Time Off",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Request Time Off",
+							"href" : "src/applications/RequestTimeOff/index.html"
+						},
+						{
+							"label" : "Time Off Balances",
+							"state" : "disabled"
+						},
+						{
+							"label" : "List Of Requests",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Request Carryover",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Talent",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Performance Dashboard",
+							"href" : "src/applications/PerformanceDashboard/index.html"
+						},
+						{
+							"label" : "Performance Goals",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Compensation Notices",
+							"state" : "disabled"
+						},
+						{
+							"label" : "Career Center",
+							"href" : "src/applications/CareerCenter/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						}
+					]
+				},
+				{
+					"label" : "Benefits",
+					"appref": "",
+					"state" : "enabled",
+					"items" : [
+						{
+							"label" : "Enrollments",
+							"href" : "src/applications/Enrollments/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html"
+						},
+						{
+							"label" : "Documents",
+							"state" : "disabled"
+						}
+					]
+				}
+			]
+		}
+	]
+}

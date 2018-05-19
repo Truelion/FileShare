@@ -1,0 +1,26 @@
+html,body{
+	background:transparent;
+	height: 100%;
+}
+.LoginOAuth .g-signin2 {
+	margin-top: 10px;
+}
+.LoginOAuth .g-signin2 > .abcRioButton {
+	margin: 0 auto;
+}
+
+.LoginOAuth .page-container{
+background: url(index_files/login-background-vantage.jpeg.jpg);
+height: 100%;
+margin: 0;
+}
+
+.LoginOAuth .page-container > div {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	width: 340px;
+	top: 50%;
+	transform: translate3d(-50%,-50%,0);
+
+}

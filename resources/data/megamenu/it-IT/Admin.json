@@ -1,0 +1,94 @@
+{
+	"table"	: "mega-menu",
+	"result" : [
+		{
+			"label" : "Amministrazione del Personale",
+			"state" : "enabled",
+			"items" : [
+				{
+					"label" : "Area Amministrativa",
+					"appref": "",
+					"state" : "enabled",
+					"items":[
+						{
+							"label" : "OneService",
+							"href": "OneService/index.html?screen=agenda",
+							"state" : "enabled"
+						},
+						{
+							"label" : "Sipert",
+							"appref": "apps/Colaborador",
+							"state" : "disabled"
+						}
+					]
+				},
+				{
+					"label" : "Documentale",
+					"appref": "",
+					"state" : "enabled",
+					"items":[
+						{
+							"label" : "Gestione Documenti",
+							"href": "GestioneDocumenti/index.html",
+							"state" : "enabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Sviluppo Risorse Umane",
+			"state" : "enabled",
+			"items" :[
+				{
+					"label" : "Sviluppo Risorse Umane",
+					"appref": "",
+					"state" : "enabled",
+					"items":[
+						{
+							"label" : "HR Management",
+							"href": "OneService/index.html?screen=la_tua",
+							"state" : "enabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "User Community",
+			"state" : "enabled",
+			"items":[
+				{
+					"label" : "The Bridge",
+					"state" : "enabled",
+					"items":[
+						{
+							"label" : "Accedi alla community",
+							"href": "TheBridge/index.html",
+							"state" : "enabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label": "Utility",
+			"state" : "enabled",
+			"appref":"",
+			"items":[
+				{
+					"label" : "News",
+					"state" : "enabled",
+					"appref":"",
+					"items":[
+						{
+							"label" : "News Management",
+							"appref": "apps/NewsManagement",
+							"state" : "enabled"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+        <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+        <meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1 maximum-scale=1.0 user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    	<title>ADP Simul8: Offline Web Development Framework</title>
+
+
+
+
+
+
+
+        <!--====================== INSERT: OFFLINE DEMO LIBS ===================-->
+            <link rel="stylesheet" type="text/css" href="../../../resources/css/animate.css"/>
+            <link rel="stylesheet" type="text/css" href="../../../resources/css/font-awesome.min.css"/>
+            <link rel="stylesheet" type="text/css" href="../../../resources/css/fonts.css"/>
+      
+            <!-- CONSTANTS  -->
+            <script src="../../../resources/constants.js"></script>
+            <script> Session = top.Session; </script>
+            <!-- CONFIG -->
+
+            <!-- LIBS & UTILITIES -->
+            <!--script src="../../../src/libs/TemplateEnginePlugins.js"></script-->
+
+            <script src="../../../-appconfig.js"></script>
+            <script id="config">
+                Config.ROOTPATH = "../../../";
+                Config.NAMESPACE = "applications.FrameworkReleaseNotes";
+                Config.DYNAMICLOAD  = false; 
+            </script>
+            <script src="../../../resources/routes.js"></script>
+            <!-- FRAMEWORK -->
+            <script src="../../../src/libs/framework.src.js"></script>
+            <script src="../../../resources/labels.js"></script>
+            <!-- LIBS & UTILITIES -->
+            <!-- COMMON TRAITS -->
+            <!-- MODEL/VOs -->
+            <!-- DATA CONTROLLERS -->
+            <!-- UI COMPONENTS -->
+            <script src="../../../src/core/utilities/URIHelpers.js"></script>
+            <!-- <script src="../../../src/core/ui/OfflineApplication.js"></script> -->
+            
+            <!-- <script src="../../../src/core/ui/MegaMenu/index.js"></script> -->
+
+            <!-- MAIN APPLICATION -->
+            <script src="index.js"></script>
+    <!--====================== END INSERT: OFFLINE DEMO LIBS ===================-->
+
+    </head>
+
+
+
+
+
+
+
+    
+    <body>
+        <div style="margin-bottom: 30px;">
+            <h1>Simul8 Framework Updated</h1>
+            <h4>You are running: Nightly <span id="running_version"></span></h4>
+            <h4>Stable: <span id="stable_version"></span></h4>
+            <div><button onclick="run_framework_diagnostics_check()">RUN DIAGNOSTICS</button></div>
+            <div style="margin-top: 9px;background: lightgray;padding: 5px;"><input id="dontshow_input" style="margin: 0;border: 1px solid;" type="checkbox"> I've read and understand the install notes</div>
+        </div>
+
+        <H1>Notes:</H1>
+        <div id="framework_release_notes-container">
+            <script id="framework_release_notes-template" type="text/x-kruntch-template">
+                <for each="items">
+                    <div class="release">
+                        <h3 class="version-title">Version: [version] (build: [build])</h3>
+                        <div>[description]</div>
+                        <ul>
+                            <for each="notes">
+                                <li>[$]</li>
+                            </for>
+                        </ul>
+                        <div>
+                            <div class="installnotes-title"><strong>Install Notes:</strong></div>
+                            <div>[install_notes]</div>
+                        </div>
+                    </div>
+                </for>
+            </script>
+        </div>
+    </body>
+
+</html>

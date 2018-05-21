@@ -44,6 +44,7 @@ Config.Applications = {
 	LOGIN : "src/applications/LoginOAuth/index.html",
 	// MAIN : "src/applications/HelloWorld/index.html",
 	MAIN : "src/applications/Main/index.html",
+	// MAIN : "src/applications/HTML5Download/index.html",
 	// MAIN : "src/applications/Main/index_{Session.user.role}_{Session.State.currentLanguage.CODE}.html",
 	PDF : "src/applications/PDFViewer/index.html"
 };

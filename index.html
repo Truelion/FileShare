@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+   <meta http-equiv="Content-Security-Policy" content="default-src * blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
     <meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1 maximum-scale=1.0 user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,7 +36,7 @@
 </head>
 <FRAMESET>
   <FRAMESET rows="100%,*" border="0" frameborder="0">
-      <FRAME id="mainFrame" src="./blank.html" sandbox="allow-same-origin allow-scripts allow-popups allow-forms">
+      <FRAME id="mainFrame" src="./blank.html" sandbox="allow-top-navigation-by-user-activation allow-top-navigation allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-popups allow-forms">
       <FRAME id="sessionFrame" src="./session.html" sandbox="allow-same-origin allow-scripts allow-popups allow-forms">
   </FRAMESET>
   <NOFRAMES>

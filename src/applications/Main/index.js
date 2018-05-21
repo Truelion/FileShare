@@ -1,6 +1,7 @@
 //=require src/libs/dragdrop.js
 //=require src/libs/webtorrent.min.js
 //=require src/core/ui/OfflineApplication.js
+//=require src/libs/FileSaver.js
 
 namespace("applications.Main",
 {
@@ -38,7 +39,12 @@ namespace("applications.Main",
     },
 
     onSignIn : function(googleUser) {
-        
+      alert("signed in")
+        var m = parent.location.search.replace("?m=","");
+        if(m && m.length > 0){
+          console.log(m)
+          this.startDownload(m)
+        }
         // alert("signin")
       // var profile = googleUser.getBasicProfile();
       // console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -86,9 +92,42 @@ namespace("applications.Main",
         // e.stopPropagation();
     },
 
+  startDownload: function (magnetURI){
+      var client = new WebTorrent();
+          client.add(magnetURI, function(torrent){
+            // var file = torrent.files.find(function (file) {
+            //   return file.name.endsWith('.mp4')
+            // })
+            var file = torrent.files[0];
+            file.getBlob(function (err, blob) {
+              console.log("err",err);
+              var a = document.createElement('a')
+              a.download = file.name
+              a.href = window.URL.createObjectURL(blob);
+              a.textContent = 'Download ' + file.name
+              document.body.appendChild(a);
+
+              // console.log(blob)
+              saveAs(blob, file.name);
+            })
+            // file.getBlobURL(function (err, url) {
+            //   if (err) throw err
+              // var a = document.createElement('a')
+              // a.download = file.name
+              // a.href = url
+              // a.textContent = 'Download ' + file.name
+              // document.body.appendChild(a);
+            //   saveAs(file, file.name);
+            // })
+          });
+  },
+
     onMagnetLinkReady :function(torrent){
-        var sharelink = "https://www.addtoany.com/share?linkurl=[url]&amp;linkname=[name]";
+        var sharelink = "http://mydomain.com/?m=[url]&amp;linkname=[name]";
             sharelink = this.parseTemplate(sharelink, {name:torrent.files[0].name, url:torrent.magnetURI});
+            sharelink = encodeURIComponent(sharelink);
+            sharelink = "https://www.addtoany.com/share?linkurl=" + sharelink;
+            
             console.log(sharelink,torrent)
         var link = this.querySelector("#magnet_link");
             link.setAttribute("href", sharelink)
